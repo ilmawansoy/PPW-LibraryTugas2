@@ -1,0 +1,689 @@
+html
+{
+    position: relative;
+
+    min-height: 100%;
+}
+
+.page
+{
+    font-family: 'Lato', sans-serif;
+    color: black;
+
+    background-color: rgb(244,244,244);
+}
+
+/* NavBar source: http://bootsnipp.com/snippets/featured/toggle-navbar*/
+.navbar
+{
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+
+    letter-spacing: 4px;
+
+    border: none;
+    background: rgb(0,0,0);
+    box-shadow: 0 2px 2px black;
+}
+.navbar-brand
+{
+    font-family: Righteous;
+    font-size: 30px;
+
+    position: relative;
+    z-index: 2;
+}
+.navbar li a,
+.navbar .navbar-brand
+{
+    color: #fff !important;
+}
+.navbar-nav li a:hover,
+.navbar-nav li.active a
+{
+    color: black !important;
+    background-color: white !important;
+}
+.navbar-nav.navbar-right .btn
+{
+    position: relative;
+    z-index: 2;
+
+    margin: 10px auto;
+    padding: 4px 20px;
+}
+.navbar .navbar-collapse
+{
+    position: relative;
+}
+.navbar .navbar-collapse .navbar-right > li:last-child
+{
+    padding-left: 22px;
+}
+.navbar .nav-collapse
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    margin: 0;
+    padding-right: 120px;
+    padding-left: 80px;
+}
+.navbar.navbar-default .nav-collapse
+{
+    background-color: black;
+}
+.navbar.navbar-inverse .nav-collapse
+{
+    background-color: #222;
+}
+.navbar .nav-collapse .navbar-form
+{
+    border-width: 0;
+    box-shadow: none;
+}
+.nav-collapse > li
+{
+    float: right;
+}
+.btn.btn-circle
+{
+    border-radius: 50px;
+}
+.btn.btn-outline
+{
+    background-color: transparent;
+}
+
+@media screen and (max-width: 767px)
+{
+    .navbar .navbar-collapse .navbar-right > li:last-child
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar .nav-collapse
+    {
+        margin: 7.5px auto;
+        padding: 0;
+    }
+    .navbar .nav-collapse .navbar-form
+    {
+        margin: 0;
+    }
+    .nav-collapse > li
+    {
+        float: none;
+    }
+}
+
+
+form > .input
+{
+    margin-right: 8px;
+
+    border-style: inset;
+    border-radius: 4px;
+}
+
+.signinlabel
+{
+    font-family: 'Righteous', cursive;
+
+    margin: 12px 10px;
+
+    color: white;
+}
+
+/* Content Header */
+.header
+{
+    height: 500px;
+
+    background: url('../img/bg1.jpeg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 2px 3px grey;
+}
+
+.container > .jumbotron
+{
+    margin-top: 300px;
+
+    background-color: transparent;
+}
+
+.jumbotron > h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+
+    color: white;
+    text-shadow: 0 2px 3px black;
+}
+
+.jumbotron > h4
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+
+    color: white;
+    text-shadow: 0 2px 3px black;
+}
+
+/*Page admin*/
+.text-center > form
+{
+    margin: 40px 0;
+}
+
+.home
+{
+    font-size: 24px;
+}
+
+.col-sm-3
+{
+    padding-bottom: 15px;
+}
+
+/*Index.php*/
+
+.book-list-header
+{
+    font-family: 'Lato', sans-serif;
+
+    margin: 30px 0;
+}
+/*http://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle*/
+.book-list-header > h1
+{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: .1em;
+
+    margin: 40px 0 30px;
+
+    color: black;
+    border-bottom: 1px solid #000;
+}
+
+h1 span
+{
+    padding: 0 10px;
+
+    background-color: rgb(244,244,244);
+}
+
+/*untuk buku non pojok kanan*/
+.book-detail-right
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 200px;
+
+    display: none;
+
+    width: 280px;
+    margin-left: 15px;
+    padding: 15px;
+
+    border-style: solid;
+    border-color: #adc1d6;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+}
+
+.book-detail-right:before
+{
+    position: absolute;
+    top: 35px;
+    left: -40px;
+
+    width: 0;
+    height: 0;
+
+    content: ' ';
+
+    border: 20px solid;
+    border-color: transparent #adc1d6 transparent transparent;
+}
+
+.book-detail-right:after
+{
+    position: absolute;
+    top: 40px;
+    left: -30px;
+
+    width: 0;
+    height: 0;
+
+    content: ' ';
+
+    border: 15px solid;
+    border-color: transparent #f9f9f9 transparent transparent;
+}
+
+/*untuk buku pojok kanan*/
+.book-detail-left
+{
+    font-family: 'Lato', sans-serif;
+
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 200px;
+
+    display: none;
+
+    width: 280px;
+    margin-right: 15px;
+    padding: 15px;
+
+    border-style: solid;
+    border-color: #adc1d6;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+}
+
+.book-detail-left:before
+{
+    position: absolute;
+    top: 35px;
+    right: -40px;
+
+    width: 0;
+    height: 0;
+
+    content: ' ';
+
+    border: 20px solid;
+    border-color: transparent transparent transparent #adc1d6;
+}
+
+.book-detail-left:after
+{
+    position: absolute;
+    top: 40px;
+    right: -30px;
+
+    width: 0;
+    height: 0;
+
+    content: ' ';
+
+    border: 15px solid;
+    border-color: transparent transparent transparent #f9f9f9;
+}
+
+
+.detail
+{
+    font-size: 12px;
+}
+
+.detail > h5
+{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+#parent
+{
+    position: relative;
+
+    float: left;
+}
+
+.pinjam,
+.detail-btn
+{
+    display: inline-block;
+}
+
+/*SRC: w3schools*/
+
+.slideanim
+{
+    visibility: hidden;
+
+    margin-bottom: 50px;
+}
+.slide
+{
+    /* Make the element visible */
+    visibility: visible;
+
+    -webkit-animation-name: slide;
+    /* The name of the animation */
+            animation-name: slide;
+    -webkit-animation-duration: 1s;
+    /* The duration of the animation */
+            animation-duration: 1s;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide
+{
+    0%
+    {
+        transform: translateX(-40%);
+
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0%);
+
+        opacity: 1;
+    }
+}
+@-webkit-keyframes slide
+{
+    0%
+    {
+        -webkit-transform: translateX(-40%);
+
+        opacity: 0;
+    }
+    100%
+    {
+        -webkit-transform: translateX(0%);
+
+        opacity: 1;
+    }
+}
+
+.to-top:hover
+{
+    cursor: pointer;
+}
+
+/*FOOTER*/
+footer
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+
+    background: black;
+}
+
+.copyright
+{
+    color: white;
+}
+
+a:link
+{
+    text-decoration: none;
+
+    color: white;
+}
+
+a:visited
+{
+    text-decoration: none;
+
+    color: white;
+}
+
+a:hover
+{
+    text-decoration: none;
+
+    color: #adc1d6;
+}
+
+.social
+{
+    color: white;
+}
+
+/*Page detail*/
+.books
+{
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+    background-color: white;
+}
+
+.review
+{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+
+    background-color: white;
+}
+
+.tombol
+{
+    display: inline-block;
+}
+
+.panel-collapse
+{
+    padding-top: 15px;
+}
+
+.user_review
+{
+    display: inline-block;
+}
+
+#date
+{
+    float: right;
+
+    padding-top: 15px;
+}
+
+.btn
+{
+    font-family: 'Lato', sans-serif;
+
+    color: white;
+    background-color: #009688;
+}
+
+.btn:hover
+{
+    color: white;
+    background-color: #00796b;
+}
+
+/*Homepage*/
+.home-header
+{
+    height: 650px;
+
+    background: url('../img/bg2.jpeg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 2px 3px grey;
+}
+
+#home-h1
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+
+    color: white;
+    text-shadow: 0 3px 4px black;
+}
+
+#home-h3
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+
+    color: white;
+    text-shadow: 0 3px 4px black;
+}
+
+.collection
+{
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    background-color: white;
+}
+
+#collection:hover
+{
+    cursor: pointer;
+
+    color: #009688 !important;
+}
+
+.about
+{
+    font-size: 100px;
+    color: black;
+
+    margin-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px
+}
+
+/* carousel */
+#quote-carousel
+{
+    margin-top: 30px;
+    padding: 0 10px 30px 10px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+    font-size: 2.3em;
+
+    margin-top: 30px;
+
+    color: #222;
+    background: none;
+    text-shadow: none;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+    left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+    right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+    top: auto;
+    right: 50%;
+    bottom: 0;
+
+    margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+    background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+    background: #333;
+}
+#quote-carousel img
+{
+    width: 250px;
+    height: 100px;
+}
+/* End carousel */
+
+.item blockquote
+{
+    margin: 0;
+
+    border-left: none;
+}
+
+.item blockquote img
+{
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before
+{
+    font-family: 'Fontawesome';
+
+    float: left;
+
+    margin-right: 10px;
+
+    content: '\f10d';
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+    #quote-carousel
+    {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px)
+{
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators
+    {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li
+    {
+        display: inline-block;
+
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+    }
+    #quote-carousel .carousel-indicators li.active
+    {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+}
